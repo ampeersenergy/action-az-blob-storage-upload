@@ -30,4 +30,4 @@ az storage blob upload-batch \
     --source "${INPUT_SOURCE_PATH}" \
     --destination "${INPUT_CONTAINER_NAME}" \
     --destination-path "${INPUT_DESTINATION_PATH}" \
-    "${EXTRA_ARGS}"
+    ${EXTRA_ARGS}
