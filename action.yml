@@ -1,5 +1,7 @@
 name: "Azure Blob Storage Upload"
-author: "tb <t.bauchspiess@ampeersenergy.de>"
+author: |
+  Matthew Fisher <matt.fisher@microsoft.com>
+  tb <t.bauchspiess@ampeersenergy.de>
 description: "Uploads assets to Azure Blob Storage"
 
 branding:
@@ -17,8 +19,9 @@ inputs:
     description: "The name of the directory you want to upload"
     required: true
   destination_path:
-    description: "The name of the directory you want to upload"
+    description: "The name of the directory you want to upload to"
     required: true
+    default: "/"
   extra_args:
     description: "Extra arguments that can be passed to `az storage blob upload-batch`. Useful for passing flags like `--pattern`"
     required: false
